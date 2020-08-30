@@ -40,41 +40,41 @@ pipeline  {
 
         }
 
-      //  stage("docker login") {
+        stage("docker login") {
 
-        //    steps {
+            steps {
 
-        //        echo " ============== docker login =================="
+               echo " ============== docker login =================="
 
-        //        withCredentials([usernamePassword(credentialsId: 'DockerHub-Credentials', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+                withCredentials([usernamePassword(credentialsId: 'DockerHub-Credentials', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
 
-        //            sh '''
+                   sh '''
 
-       //             docker login -u $USERNAME -p $PASSWORD
+                    docker login -u $USERNAME -p $PASSWORD
 
-       //             '''
+                    '''
 
-       //         }
+                }
 
-       //     }
+            }
 
-       // }
+        }
 
-       // stage("docker push") {
+        stage("docker push") {
 
-      //      steps {
+            steps {
 
-       //         echo " ============== pushing image =================="
+                echo " ============== pushing image =================="
 
-       //         sh '''
+                sh '''
 
-       //         docker push macnaer/chatterboxserver:latest
+                docker push melnyk12/dfo:latest
 
-      //          '''
+                '''
 
-       //     }
+            }
 
-       // }
+        }
 
       //  stage("docker stop") {
 
