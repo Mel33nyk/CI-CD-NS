@@ -34,19 +34,20 @@ pipeline  {
 
                     //sh "docker build -t macnaer/chatterboxserver . "
 
-                    echo "First step works"
+                   
 
-                    // sh '''
+                    
+                     sh '''
 
                   
 
-                    // pip3 install -r requirements.txt
+                     pip3 install -r requirements.txt
 
-                    // python3 start.py 
+                     python3 start.py 
 
 
 
-                    // '''
+                     '''
 
                 }
 
