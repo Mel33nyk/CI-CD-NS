@@ -32,7 +32,7 @@ pipeline  {
 
                 dir('.'){
 
-                    //sh "docker build -t macnaer/chatterboxserver . "
+                    //sh "docker build -t melnyk12/dfo . "
 
                    
 
