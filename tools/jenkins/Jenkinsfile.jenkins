@@ -32,22 +32,7 @@ pipeline  {
 
                 dir('.'){
 
-                    //sh "docker build -t melnyk12/dfo . "
-
-                   
-
-                    
-                     sh '''
-
-                  
-
-                     pip3 install -r requirements.txt
-
-                     python3 start.py 
-
-
-
-                     '''
+                    sh "docker build -t melnyk12/dfo . "
 
                 }
 
