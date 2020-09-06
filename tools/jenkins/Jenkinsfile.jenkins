@@ -84,7 +84,7 @@ pipeline  {
 
                 sh '''
 
-      //          docker stop chatterboxserver
+      //          docker stop dfo
 
       //          '''
 
@@ -100,7 +100,7 @@ pipeline  {
 
                 sh '''
 
-       //         docker rm chatterboxserver
+       //         docker rm dfo
 
        //         '''
 
