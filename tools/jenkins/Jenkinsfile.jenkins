@@ -84,9 +84,9 @@ pipeline  {
 
                 sh '''
 
-      //          docker stop dfo
+               docker stop dfo
 
-      //          '''
+                '''
 
            }
 
@@ -100,9 +100,9 @@ pipeline  {
 
                 sh '''
 
-       //         docker rm dfo
+                docker rm dfo
 
-       //         '''
+                '''
 
             }
 
