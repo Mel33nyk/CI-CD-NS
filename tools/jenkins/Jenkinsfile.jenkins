@@ -76,53 +76,53 @@ pipeline  {
 
         }
 
-      //  stage("docker stop") {
+        stage("docker stop") {
 
-       //     steps {
+            steps {
 
-       //         echo " ============== stoping all images =================="
+                echo " ============== stoping all images =================="
 
-      //          sh '''
+                sh '''
 
       //          docker stop chatterboxserver
 
       //          '''
 
-      //      }
+           }
 
-      //  }
+        }
 
-      //  stage("docker remove") {
+        stage("docker remove") {
 
-      //      steps {
+            steps {
 
-      //          echo " ============== removing all docker containers =================="
+                echo " ============== removing all docker containers =================="
 
-       //         sh '''
+                sh '''
 
        //         docker rm chatterboxserver
 
        //         '''
 
-        //    }
+            }
 
-       // }
+        }
 
-      //  stage("docker run") {
+        stage("docker run") {
 
-      //      steps {
+            steps {
 
-       //         echo " ============== starting chatterbox server =================="
+                echo " ============== starting chatterbox server =================="
 
-       //         sh '''
+                sh '''
 
         //        docker run -d --restart=always --name chatterboxserver -p 3200:3200 macnaer/chatterboxserver
 
         //        '''
 
-        //    }
+            }
 
-        //}
+        }
 
         // stage("Deploy to stage server") {
 

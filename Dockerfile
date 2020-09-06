@@ -1,6 +1,6 @@
 FROM python:latest
  
-MAINTAINER macnaer
+MAINTAINER melnyk12
  
 WORKDIR /home/dfo
 COPY . /home/dfo
