@@ -76,37 +76,37 @@ pipeline  {
 
         }
 
-        stage("docker stop") {
+    //     stage("docker stop") {
 
-            steps {
+    //         steps {
 
-                echo " ============== stoping all images =================="
+    //             echo " ============== stoping all images =================="
 
-                sh '''
+    //             sh '''
 
-      //          docker stop dfo
+    //   //          docker stop dfo
 
-      //          '''
+    //   //          '''
 
-           }
+    //        }
 
-        }
+    //     }
 
-        stage("docker remove") {
+    //     stage("docker remove") {
 
-            steps {
+    //         steps {
 
-                echo " ============== removing all docker containers =================="
+    //             echo " ============== removing all docker containers =================="
 
-                sh '''
+    //             sh '''
 
-       //         docker rm dfo
+    //    //         docker rm dfo
 
-       //         '''
+    //    //         '''
 
-            }
+    //         }
 
-        }
+    //     }
 
 
        stage("docker run") {
