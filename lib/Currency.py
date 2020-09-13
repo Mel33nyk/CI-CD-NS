@@ -1,7 +1,7 @@
 import requests
 from boto3.session import Session
 import boto3
-from Settings import FILENAME, URL
+from lib.Settings import FILENAME, URL
 
 if __name__ == "__main__":
     pass
