@@ -2,7 +2,7 @@ if __name__ == "__main__":
     pass
 
 import requests
-from lib.Settings import URL_COVID19
+from Settings import URL_COVID19
 
 
 class Covid19:
