@@ -4,11 +4,10 @@ import time
 
 currency = Currency()
 covid19 = Covid19()
-
-counter = 0
-while True:
-    counter+=1
-    print("Get online data => ", counter, " times")
-    currency.start()
-    covid19.start()
-    time.sleep(300)
+covid19.start()
+# counter = 0
+# while True:
+#     counter+=1
+#     print("Get online data => ", counter, " times")
+#     currency.start()
+#     time.sleep(300)
